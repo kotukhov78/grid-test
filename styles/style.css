@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 108px 1fr 40px;
+  grid-template-rows: 155px 1fr 54px 54px;
+  gap: 20px;
+  margin: 0 auto;
+  max-height: 512px;
+  max-width: 512px;
+  background-color: black;
+}
+
+.page__block_white {
+  background-color: white;
+}
+
+.page__block_gray {
+  background-color: #d9d9d9;
+}
+
+.page__block_red {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background-color: red;
+  height: 0;
+  padding-bottom: 95%; /* Высота будет равна ширине (создаёт квадрат) */
+}
+
+.page__block_blue {
+  grid-row: 3 / 5;
+  background-color: blue;
+}
+
+.page__block_duble {
+  display: flex;
+}
+
+.top {
+  flex-grow: 1;
+}
+
+.bottom {
+  grid-row: 3 / 5;
+}
