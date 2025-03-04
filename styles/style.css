@@ -57,7 +57,11 @@ blockquote {
   display: flex;
 }
 
-.top {
+.page__block-duble .page__block_gray {
+  width: 53px;
+}
+
+.page__block-duble .page__block_white {
   flex-grow: 1;
 }
 
